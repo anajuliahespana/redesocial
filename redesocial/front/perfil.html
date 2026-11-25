@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu perfil | Lunex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="img/logo.svg" alt="Lunex">
+        </div>
+
+        <nav class="menu">
+            <a href="index.html" class="menu-item" title="Início">
+                <span>⌂</span>
+            </a>
+
+            <a href="#" class="menu-item" title="Reels">
+                <span>▷</span>
+            </a>
+
+            <a href="#" class="menu-item" title="Mensagens">
+                <span>➤</span>
+            </a>
+
+            <a href="#" class="menu-item" title="Pesquisar">
+                <span>⌕</span>
+            </a>
+
+            <a href="#" class="menu-item" title="Notificações">
+                <span>♡</span>
+            </a>
+        </nav>
+    </aside>
+
+    <main class="content">
+
+        <section class="perfil-container">
+
+            <div class="perfil-cabecalho">
+
+                <img id="fotoPerfil" src="img/logo.svg" alt="Foto de perfil">
+
+                <div class="perfil-informacoes">
+                    <h1 id="perfilUsername">Usuário</h1>
+                    <h3 id="perfilNome">Nome completo</h3>
+
+                    <p id="totalPublicacoes">0 publicações</p>
+
+                    <button type="button" id="btnEditarPerfil">
+                        Editar perfil
+                    </button>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h2>Minhas publicações</h2>
+
+            <div id="minhasPublicacoes" class="publicacoes"></div>
+
+        </section>
+
+    </main>
+
+    <!-- JANELA DE EDIÇÃO -->
+    <div id="modalEditarPerfil" class="modal-editar">
+
+        <div class="modal-conteudo">
+
+            <h2>Editar perfil</h2>
+
+            <form id="formEditarPerfil">
+
+                <label for="editarNome">Nome completo</label>
+                <input type="text" id="editarNome" required>
+
+                <label for="editarUsername">Username</label>
+                <input type="text" id="editarUsername" required>
+
+                <label for="editarEmail">E-mail</label>
+                <input type="email" id="editarEmail" required>
+
+                <div class="modal-botoes">
+
+                    <button type="button" id="btnCancelarEdicao">
+                        Cancelar
+                    </button>
+
+                    <button type="submit">
+                        Salvar alterações
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

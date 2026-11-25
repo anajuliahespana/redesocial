@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="img/logo.svg" alt="Lunex">
+        </div>
+
+        <nav class="menu">
+
+            <a href="index.html" class="menu-item active" title="Início">
+                <span>⌂</span>
+            </a>
+
+            <a href="#" class="menu-item" title="Reels">
+                <span>▷</span>
+            </a>
+
+            <a href="#" class="menu-item" title="Mensagens">
+                <span>➤</span>
+            </a>
+
+            <a href="#" class="menu-item" title="Pesquisar">
+                <span>⌕</span>
+            </a>
+
+            <a href="#" class="menu-item" title="Notificações">
+                <span>♡</span>
+            </a>
+
+            <a href="#" class="menu-item" title="Criar publicação">
+                <span>＋</span>
+            </a>
+
+            <a href="perfil.html" class="menu-item" title="Perfil">
+                <span>♙</span>
+            </a>
+
+        </nav>
+
+        <div class="menu-bottom">
+
+            <a href="#" class="menu-item" title="Mais">
+                <span>☰</span>
+            </a>
+
+            <a href="#" class="menu-item" id="btnSair" title="Sair">
+                <span>↪</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="content">
+
+        <section class="feed">
+
+            <!-- STORIES -->
+            <div class="stories-list">
+
+                <div class="story">
+                    <div class="story-foto adicionar">+</div>
+                    <p>Seu story</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-foto">
+                        <img src="img/anahespana.jpg" alt="anahespana">
+                    </div>
+                    <p>anahespana</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-foto">
+                        <img src="img/catherinebascoy.jpg" alt="catherinebascoy">
+                    </div>
+                    <p>catherinebascoy</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-foto">
+                        <img src="img/mudias.jpg" alt="mudias_">
+                    </div>
+                    <p>mudias_</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-foto">
+                        <img src="img/bascoymalu.jpg" alt="bascoymalu">
+                    </div>
+                    <p>bascoymalu</p>
+                </div>
+
+            </div>
+
+            <!-- CRIAR PUBLICAÇÃO -->
+            <div class="criar-post">
+
+                <h2>Criar publicação</h2>
+
+                <textarea
+                    id="conteudoPost"
+                    placeholder="O que você está pensando?"
+                ></textarea>
+
+                <div class="post-acoes">
+                    <span>📷 Foto</span>
+                    <span>🎬 Vídeo</span>
+
+                    <button type="button" id="btnPublicar">
+                        Publicar
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- PUBLICAÇÕES -->
+            <div class="publicacoes" id="listaPublicacoes">
+                <h2>Publicações</h2>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
